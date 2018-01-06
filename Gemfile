@@ -18,6 +18,7 @@ gem "geocoder"
 gem "faraday"
 gem "bourbon"
 gem "neat"
+gem 'eventmachine', '1.0.9.1'
 
 group :development, :test do
   gem 'pry'
@@ -31,5 +32,5 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin]
-gem 'wdm', '>= 0.1.0', platforms: [:mingw, :mswin]
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+gem 'wdm', '>= 0.1.0', platforms: [:mingw, :mswin, :x64_mingw]
